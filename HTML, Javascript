@@ -16,7 +16,7 @@
 
       <!-- Nav bar code starts form HERE --> 
   <nav class="navbar navbar-light bg-light">
-    <span class="navbar-brand mb-0 h1">Welconme,Try this</span>
+    <span class="navbar-brand mb-0 h1">Welcome,Try this</span>
   </nav>
       <!-- navbar code end HERE -->
 
