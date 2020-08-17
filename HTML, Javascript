@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- title of the page -->
+    <title>Real-time</title>
+
+  </head>
+  <body>
+
+      <!-- Nav bar code starts form HERE --> 
+  <nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">Welconme,Try this</span>
+  </nav>
+      <!-- navbar code end HERE -->
+
+      <!-- section where time to be display -->
+<div class="container my-4">
+    <div class="jumbotron">
+        <h1 class="display-4">Your Current Time is : <span id="time"></span></h1>
+        <p class="lead">This program shows TIME of different countries all over the globe in Real-time.</p>
+        <hr class="my-4">
+        <p>So,By clicking the Button below check your TIME :)</p>
+        <a class="btn btn-primary btn-lg"  id ="btn-1" href="#" role="button">Browse My Time</a>
+      </div>
+</div><!-- and this section ends HERE -->
+
+    <!-- jQuery first,then Bootstrap JS -->
+    <!-- jQuery.js CDNs source file -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+
+    <!-- functionality of button -->
+    <!-- logic -->
+<script>
+    $(document).ready(function(){ // $ symbol is used to call jQuery library
+          $("#btn-1").click(function(){   // click is used perform action on button
+
+            let a;
+            let date;
+            let time;
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            setInterval(() => {
+            a = new Date();
+            date = a.toLocaleDateString(undefined,options)
+            time =a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+        document.getElementById('time').innerHTML = time + '<br> on ' + date;
+        }, 1000);
+
+          });
+    });
+</script>
+
+    <!-- Bootstrap JS CDNs -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
