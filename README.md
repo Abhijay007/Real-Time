@@ -6,6 +6,6 @@ This program shows **time** and **date** of different countries all over the glo
 - CSS
 - Javascript
 
-# Framework and library
+# Framework and library used in this project
 - Bootstarp
 - jQuery
