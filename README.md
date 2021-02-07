@@ -1,4 +1,4 @@
-# :watch: Real-Time
+# :watch: my first contribution through version control
 This program shows **time** and **date** of different countries all over the globe in Real-time.
 
 # :computer: Languages used in this project
